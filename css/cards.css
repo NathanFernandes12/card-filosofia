@@ -1,0 +1,38 @@
+.card {
+    width: 200px;
+    margin: 20px;
+    perspective: 1000px;
+
+}
+
+.face {
+    width: 200px;
+    height: 300px;
+    transition: 0.7s;
+    transform-style: preserve-3d;
+}
+
+.card.is-flipped .face{
+    transform: rotateY('-180deg');
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    backface-visibility: hidden;
+
+}
+
+.front {
+    background-color: aqua;
+    transform: rotateY('angle');
+    cursor: pointer;
+}
+
+.back {
+    background-color: blueviolet;
+    transform: rotateY('angle');
+    cursor: pointer;
+}
