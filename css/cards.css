@@ -22,17 +22,28 @@
     height: 100%;
     padding: 10px;
     backface-visibility: hidden;
-
+    border: 7px solid black;
+    margin: 10px;
+    border-radius: 15px;
 }
 
 .front {
-    background-color: aqua;
+    background-color: #1B1525;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     transform: rotateY(0);
     cursor: pointer;
 }
 
 .back {
-    background-color: blueviolet;
+    background: linear-gradient(#1B1525, #312447);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     transform: rotateY(180deg);
     cursor: pointer;
 }
